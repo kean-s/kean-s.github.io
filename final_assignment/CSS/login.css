@@ -1,0 +1,124 @@
+body{
+    width: 100%;
+}
+
+.main-page{
+    min-height : 90vh;
+    margin : 0;
+    padding : 0;
+    background :linear-gradient(to left, rgb(0, 191, 255),rgb(191, 0, 208));
+    display : flex;
+    align-items : center;
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    font-family :'Roboto',sans-serif;
+}
+
+
+/*Login and Signup form box container*/
+.login-container h1{
+    margin : 0;
+    padding : 0 0 25px;
+    text-align : center;
+    font-size : 22px;
+    color :rgb(0, 140, 255); 
+}
+
+.login-container{
+    width: 25%;
+    background : rgb(255, 255, 255);
+    opacity : 80%;
+    color : rgb(0, 0, 0);
+    top : 55%;
+    left : 50%;
+    position : absolute;
+    transform : translate(-50%, -50%);
+    box-sizing : border-box;
+    padding :65px 25px;
+    border-radius : 25px;
+    
+}
+
+.login-container::before{
+    content:'';
+    position :absolute;
+    background: rgba(255,255,255,.50);
+    inset:0;
+    transform :rotate(-5deg);
+    z-index :-1;
+    border-radius : 25px;
+    
+}
+
+.login-container p{
+    margin: 0;
+    padding : 0;
+    font-size : 16px;
+    text-align :  center;
+}
+
+.login-container a{
+    text-decoration: none;
+    font-size : 16px;
+    font-weight : bold;
+    line-height :18px;
+    color : rgb(0, 140, 255);
+}
+
+.login-container input{
+    width: 100%;
+    margin-bottom : 10%;
+}
+
+.login-container input[type="text"],input[type="email"], input[type="password"]{
+    border:none;
+    border-bottom :1px solid  rgb(0, 0, 0);
+    background : transparent;
+    outline : none;
+    height : 40px;
+    color :rgb(0, 0, 0);
+    font-size : 16px;
+}
+
+.login-container input[type="submit"]{
+    border : none;
+    outline : none;
+    height : 40px;
+    background: rgb(0, 140, 255);
+    color :rgb(255, 252, 252);
+    font-size : 18px;
+    border-radius : 20px;
+}
+
+.login-container input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(71, 242, 56);
+    color : rgb(255, 255, 255);
+}
+
+.login-container a:hover{
+    color : rgb(0, 205, 0);
+}
+
+/*Laptop and phone viewport*/
+@media only screen and (max-width: 1400px) {
+    body{
+        padding : 2rem 0;
+    }
+    .login-container{
+        width :300px;
+        padding : 2rem;
+    }
+ }
+ 
+@media (max-width :768px){
+    
+    body{
+        padding : 2rem 0;
+    }
+    .login-container{
+        width :300px;
+        padding : 2rem;
+    }
+}

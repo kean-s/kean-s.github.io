@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RobocoPC - Prodcuts - PC</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device=width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+<link rel = "stylesheet" type="text/css" href = "../CSS/base.css">
+<link rel = "stylesheet" type="text/css" href = "../CSS/product.css">
+<script src = "../JAVASCRIPT/addcart.js"></script>
+
+</head>
+<body>
+    <div class="main-navbar"> 
+        <h1><a href="home.html">RobocoPC</a></h1>
+        <ul id="navbar">
+            <li><a href = "home.html">Home &nbsp;</a> </li>
+            <li><a href = ""class = "active">&nbsp; Products <i class="fas fa-caret-down"></i></a>
+            <div class="navbar-drop">
+                <ul>
+                    <li><a href = "pc.html" class = "active">&nbsp; PC &nbsp;</a></li>
+                    <li><a href = "accessory.html">&nbsp; Accessories&nbsp;</a></li>
+                </ul>
+            </div>
+            </li>
+            <li><a href = "about.html">&nbsp; About Us &nbsp;</a></li>
+            <li><a href = "signup.html">&nbsp; Membership &nbsp;</a></li>
+            <li><a href = "checkout.html">&nbsp; Checkout &nbsp;</a></li>
+        </ul>
+    </div>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="../IMAGES/pc4.jpg">
+        </div>
+
+        <div class="product-details">
+            <h2>Pre Build - Water Cooled</h2>
+            <h3>Rm 9000</h3>
+          
+            <h4>Details :</h4>
+            <ul id="details-list">
+                <li><b>GPU : GIGABYTE RTX 4080 Eagle 16GB</b></li>
+                <li><b>Processor : </b>INTEL Core i7-12700F</li>
+                <li><b>Motherboard : </b>: GIGABYTE Z690 UD AX DDR4 (Wi-Fi 6+ Bluetooth 5.2)</li>
+                <li><b>RAM : </b>GSKILL TridentZ RGB 16GB DDR4 3200Mhz (2x 8GB)</li>
+                <li><b>SSD :</b> KINGSTON Nv2 PCIe 4.0  NVMe SSD 500GB (3,500MB/s, 2,100MB/s)</li>
+                <li><b>Power Supply : </b>CFSP HYDRO G PRO 850W PCIE5.0 (80+ GOLD/FULL MODULAR)</li>
+                <li><b>Cooler : </b>COOLERMASTER MasterLiquid ML240R ARGB</li>
+            </ul>
+            <select>
+                <option>Select Color</option>
+                <option>White</option>
+                <option>Aqua</option>
+                <option>Black</option>
+            </select>
+            <button type="submit" value="Submit" class = "add-to-cart" onclick="AddCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class ="footer-main">
+        <h1>RobocoPC</h1>
+
+        <p>EMAIL : robocoPC@gmail.com</p>
+        <p>CONTACT : +60 012-345678</p>
+        </div>
+        <div class="footer-copyright">
+            <p><i>©  RobocoPC Sdn Bhd. All rights reserved.</i></p>
+        </div>
+    </footer>
+</body>
+</html>             

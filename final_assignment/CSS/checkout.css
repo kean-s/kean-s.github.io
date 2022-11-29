@@ -1,0 +1,105 @@
+
+.cart-container{
+    width: 100%;
+    height : 70vh;
+    margin-top: 2%;
+    font-family :'Roboto',sans-serif; 
+    overflow-x: auto;  
+}
+
+.cart-container table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+.cart-container table img{
+    width :30%;
+}
+
+.cart-container table td:nth-child(1){
+    width: 150px;
+    text-align: center;
+}
+
+.cart-container table td:nth-child(2){
+    width: 250px;
+    text-align: center;
+}
+
+.cart-container table td:nth-child(3),
+.cart-container table td:nth-child(4),
+.cart-container table td:nth-child(5){
+    width: 150px;
+    text-align: center;
+}
+
+.cart-container table td:nth-child(4) input{
+    width: 70px;
+    padding: 10px, 5px, 10px, 15px;
+}
+
+.cart-container table thead{
+    border: 1px solid rgb(0, 0, 0);
+    border-left: none;
+    border-right:none ;
+}
+
+.cart-container table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 18px 0;
+}
+
+.cart-container table tbody tr td{
+    padding-top: 15px;
+}
+
+.cart-container table tbody  td{
+    font-size : 18px;
+}
+
+
+ 
+.subtotal{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5%;
+}
+
+.subtotal table{
+    border-top: 3px solid black;
+    width: 100%;
+    max-width: 400px;
+    margin : 10px;
+}
+
+td:last-child{
+    text-align:right;
+}
+
+.cart-container button{
+        background: rgb(51, 209, 93);
+        color :white;
+        border-radius: 8px;
+        padding: 22px 28px;
+        margin: 10px;
+        border: none;
+        float:right;
+}
+
+.cart-container button:hover{
+    background-color: rgb(30, 116, 53);
+    cursor: pointer;
+  }
+  
+
+/*phone viewport*/
+@media only screen and (max-width: 768px) {
+    .cart-container table{
+      overflow-x: auto;
+    }
+}
+

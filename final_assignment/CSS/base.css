@@ -1,0 +1,131 @@
+/*Navigation bar*/
+.main-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 0 5%;
+    background: rgb(255, 255, 255);
+    box-shadow :0 5px 15px rgba(0,0,0,0.06);
+    font-family :'Roboto',sans-serif;
+    z-index :9999;
+    position: sticky;
+    top:0;
+    left: 0;
+}
+
+.main-navbar h1{
+    color :var(--color-black);
+    font-size :30px;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color :var(--color-black);
+    font-size :30px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+#navbar li{
+    list-style :none;
+    padding : 0 20px;
+    position:relative;
+    display: flex;
+}
+
+#navbar li a{
+    text-decoration : none;
+    font-size :16px;
+    font-weight:600;
+    color :black;
+    transition :0.3s ease;
+}
+
+#navbar li a:hover, 
+#navbar a.active{ 
+    color :rgb(192, 43, 226);
+}
+
+#navbar a.active::after,
+#navbar li a:hover::after{
+    content :"";
+    width :30%;
+    height :2px;
+    background : rgb(191, 0, 249);
+    position :absolute;
+    bottom :-4px;
+    left :20px;
+}   
+
+
+.navbar-drop{
+    display: none;
+}
+
+.main-navbar ul li:hover .navbar-drop{
+    display :block;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: -20px;
+    
+ 
+}
+.main-navbar ul li:hover .navbar-drop ul{
+    display:block;
+    margin :20px;
+    margin-left: 5px;
+} 
+
+.main-navbar ul li:hover .navbar-drop ul li{
+    width: 50%;
+    padding :100px;
+    text-align: left;
+}
+
+/*Footer*/
+footer{
+    position: absolute;
+    transform: translate(-0.55%, 3%);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    color:rgb(0, 0, 0);
+    font-family :'Roboto',sans-serif;  
+}
+
+.footer-main {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.1rem;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.footer-copyright{
+    padding: 5px;
+    text-align: center;
+}
+
+.footer-main h1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: bold;
+    color :var(--color-black);
+    font-size :40px;
+}
+
+/*Laptop and phone viewport*/
+ @media only screen and (max-width: 768px) {
+ #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+    padding: 1px;
+    }
+ }

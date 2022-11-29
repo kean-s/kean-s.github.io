@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RobocoPC - Prodcuts - PC</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device=width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+<link rel = "stylesheet" type="text/css" href = "../CSS/base.css">
+<link rel = "stylesheet" type="text/css" href = "../CSS/product.css">
+<script src = "../JAVASCRIPT/addcart.js"></script>
+
+</head>
+<body>
+    <div class="main-navbar"> 
+        <h1><a href="home.html">RobocoPC</a></h1>
+        <ul id="navbar">
+            <li><a href = "home.html">Home &nbsp;</a> </li>
+            <li><a href = ""class = "active">&nbsp; Products <i class="fas fa-caret-down"></i></a>
+            <div class="navbar-drop">
+                <ul>
+                    <li><a href = "pc.html" class = "active">&nbsp; PC &nbsp;</a></li>
+                    <li><a href = "accessory.html">&nbsp; Accessories&nbsp;</a></li>
+                </ul>
+            </div>
+            </li>
+            <li><a href = "about.html">&nbsp; About Us &nbsp;</a></li>
+            <li><a href = "signup.html">&nbsp; Membership &nbsp;</a></li>
+            <li><a href = "checkout.html">&nbsp; Checkout &nbsp;</a></li>
+        </ul>
+    </div>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="../IMAGES/pc6.jpg">
+        </div>
+
+        <div class="product-details">
+            <h2>Pre Build - Neon</h2>
+            <h3>Rm 6000</h3>
+          
+            <h4>Details :</h4>
+            <ul id="details-list">
+                <li><b>GPU :  NVIDIA Geforce RTX 3080 10GB</b></li>
+                <li><b>Processor : </b> INTEL Core i5-12400F</li>
+                <li><b>Motherboard : </b> GIGABYTE B660M DS3H AX DDR4 (WiFi 6+ BT 5.2)</li>
+                <li><b>RAM : </b> CORSAIR Vengeance RGB Pro SL 16GB DDR4 3200MHz (White) (2x 8GB)</li>
+                <li><b>SSD :</b> KINGSTON Nv2  M.2 NVMe 500GB (3,500MB/s, 2,100MB/s)</li>
+                <li><b>Power Supply : </b> ANTEC CSK650W 80+ Bronze</li>
+                <li><b>Casing : </b>ANTEC DF700 Flux White (3x ARGB Fans, 2x Fans)</li>
+            </ul>
+            <select>
+                <option>Select Color</option>
+                <option>White</option>
+                <option>Aqua</option>
+                <option>Black</option>
+            </select>
+            <button type="submit" value="Submit" class = "add-to-cart" onclick="AddCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class ="footer-main">
+        <h1>RobocoPC</h1>
+
+        <p>EMAIL : robocoPC@gmail.com</p>
+        <p>CONTACT : +60 012-345678</p>
+        </div>
+        <div class="footer-copyright">
+            <p><i>©  RobocoPC Sdn Bhd. All rights reserved.</i></p>
+        </div>
+    </footer>
+</body>
+</html>             

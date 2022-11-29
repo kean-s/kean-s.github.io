@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RobocoPC</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device=width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+<link rel = "stylesheet" type="text/css" href = "../CSS/base.css">
+<link rel = "stylesheet" type="text/css" href = "../CSS/about.css">
+<script src = "../JAVASCRIPT/contact.js"></script>
+
+</head>
+<body>
+    <div class="main-navbar"> 
+        <h1><a href="home.html">RobocoPC</a></h1>
+        <ul id="navbar">
+            <li><a href = "home.html">Home &nbsp;</a> </li>
+            <li><a href = "">&nbsp; Products <i class="fas fa-caret-down"></i></a>
+            <div class="navbar-drop">
+                <ul>
+                    <li><a href = "pc.html">&nbsp; PC &nbsp;</a></li>
+                    <li><a href = "accessory.html">&nbsp; Accessories&nbsp;</a></li>
+                </ul>
+            </div>
+            </li>
+            <li><a href = "about.html" class = "active">&nbsp; About Us &nbsp;</a></li>
+            <li><a href = "signup.html">&nbsp; Membership &nbsp;</a></li>
+            <li><a href = "checkout.html">&nbsp; Checkout &nbsp;</a></li>
+        </ul>
+    </div>
+
+        <div class="about-container">
+            <div class="about-details">
+                <h3>Our History</h3>
+                <h1>4th anniversary</h1>
+                <p>RobocoPC debuted its e-commerces services on 23rd May 2018, that sells and distributes Pre-build Computers and Computer Accessories. </p>
+                <p>Our passion towards computers has leads the business thrive toward a modern approach in this digital world.</p>
+              </div>
+
+              <div class="about-details2">
+                <h3>Mission</h3>
+                <h1>To Reach More</h1>
+                <p>We hope to spread our admiration and paasion of computers to as many people as possible through the online world.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-box">
+        <h1>Contact Us</h1>
+        <p>Like what we do? Feel free to enquire.</p>
+        <form name = "contact-form" onsubmit="return contactvalidate()" method = "post">
+            
+                <label for = "Name"></label>
+                <input type = "text" placeholder = "Name">
+                <br><br>
+            
+                <label for = "Email"></label>
+                <input id = "Email" type = "text" placeholder = "Email"  required>
+                <br><br>
+          
+                <label for = "Phone"></label>
+                <input id = "Phone" type = "text" placeholder = "Phone Number: (+0123456789)" class = "contact-textbox" required >
+                <br><br>
+
+                 <textarea placeholder="  Give us your feedback..." class = "feedback"></textarea>
+                <br>
+
+                <input type="submit" name="" value="Submit">
+
+        </form>
+            </div>
+        </div>
+
+    <footer>
+        <div class ="footer-main">
+        <h1>RobocoPC</h1>
+
+        <p>EMAIL : robocoPC@gmail.com</p>
+        <p>CONTACT : +60 012-345678</p>
+        </div>
+        <div class="footer-copyright">
+            <p><i>©  RobocoPC Sdn Bhd. All rights reserved.</i></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RobocoPC - Signup</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device=width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+<link rel = "stylesheet" type="text/css" href = "../CSS/base.css">
+<link rel = "stylesheet" type="text/css" href = "../CSS/login.css">
+<script src = "../JAVASCRIPT/signup.js"></script>
+</head>
+
+<body>
+    <div class="main-navbar"> 
+        <h1><a href="home.html">RobocoPC</a></h1>
+        <ul id="navbar">
+            <li><a href = "home.html">Home &nbsp;</a> </li>
+            <li><a href = "">&nbsp; Products <i class="fas fa-caret-down"></i></a>
+            <div class="navbar-drop">
+                <ul>
+                    <li><a href = "pc.html">&nbsp; PC &nbsp;</a></li>
+                    <li><a href = "accessory.html">&nbsp; Accessories&nbsp;</a></li>
+                </ul>
+            </div>
+            </li>
+            <li><a href = "about.html">&nbsp; About Us &nbsp;</a></li>
+            <li><a href = "signup.html" class = "active">&nbsp; Membership &nbsp;</a></li>
+            <li><a href = "checkout.html">&nbsp; Checkout &nbsp;</a></li>
+        </ul>
+    </div>
+
+    <div class="main-page">
+        <div class="login-container">
+
+        <h1>Sign up</h1>
+        <p>Create your RobocoPC Member account for a better shopping experience.</p>
+        <br><br>
+        
+        <form name = "signup-form" action="home.html" onsubmit="return signupvalidate()" method = "post">
+            <label for = "uname"></label>
+            <input id="uname" type="text" placeholder="Username">
+
+            <label for = "email"></label>
+            <input id = "email" type = "text" placeholder = "Email"required>
+
+            <label for = "password"></label>
+            <input id="password" type="password" placeholder="Password" required>
+
+            <label for = "confrimpassword"></label>
+            <input id="confirmpassword" type="password" placeholder="Confrim Password" required>
+            
+            <input type="submit" name="" value="Sign up">
+
+            Already a member? <a href="login.html">&nbsp;Login here</a>
+        </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class ="footer-main">
+        <h1>RobocoPC</h1>
+
+        <p>EMAIL : robocoPC@gmail.com</p>
+        <p>CONTACT : +60 012-345678</p>
+        </div>
+        <div class="footer-copyright">
+        <p><i>©  RobocoPC Sdn Bhd. All rights reserved.</i></p>
+        </div>
+    </footer>
+</body>
+</html>
