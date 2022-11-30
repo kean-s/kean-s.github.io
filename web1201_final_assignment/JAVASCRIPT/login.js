@@ -9,7 +9,7 @@ function loginvalidate(){
     }
     
     else{
-      alert("Login Successful, welcome RobocoPC Memeber.")
+      alert("Login Successful, welcome RobocoPC Member.")
     }
 }
 

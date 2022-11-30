@@ -8,7 +8,7 @@ function signupvalidate() {
 
    if (password != confirmPassword)
    {
-        alert("Passwords do not match")
+        alert("Passwords do not match!")
         return false
     }
    
@@ -18,6 +18,6 @@ function signupvalidate() {
     }
 
     else{
-        alert("Signup Successful, welcome RobocoPC Memeber.")
+        alert("Signup Successful, welcome RobocoPC Member.")
     }
  }

@@ -11,6 +11,7 @@
     position: sticky;
     top:0;
     left: 0;
+
 }
 
 .main-navbar h1{
@@ -122,10 +123,29 @@ footer{
 /*Laptop and phone viewport*/
  @media only screen and (max-width: 768px) {
  #navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1px;
-    padding: 1px;
+    margin-top: 5px;
+    padding: 10px;
     }
- }
+
+    .main-navbar ul li:hover .navbar-drop{
+        margin-top: 30px;
+        margin-left: -20px;
+     
+    }
+    .main-navbar ul li:hover .navbar-drop ul{
+        margin :25px;
+        margin-left: 5px;
+    } 
+    
+    .main-navbar ul li:hover .navbar-drop ul li{
+        width: 50%;
+        padding :150px;
+    }
+    
+}
+
+@media only screen and (max-width: 376px) {
+    .main-navbar{
+        overflow-x: auto;
+    }
+}

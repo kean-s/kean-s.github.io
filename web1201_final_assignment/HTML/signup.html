@@ -14,9 +14,9 @@
 
 <body>
     <div class="main-navbar"> 
-        <h1><a href="index.html">RobocoPC</a></h1>
+        <h1><a href="home.html">RobocoPC</a></h1>
         <ul id="navbar">
-            <li><a href = "index.html">Home &nbsp;</a> </li>
+            <li><a href = "home.html">Home &nbsp;</a> </li>
             <li><a href = "">&nbsp; Products <i class="fas fa-caret-down"></i></a>
             <div class="navbar-drop">
                 <ul>
@@ -38,18 +38,18 @@
         <p>Create your RobocoPC Member account for a better shopping experience.</p>
         <br><br>
         
-        <form name = "signup-form" action="index.html" onsubmit="return signupvalidate()" method = "post">
+        <form name = "signup-form" action="home.html" onsubmit="return signupvalidate()" method = "post">
             <label for = "uname"></label>
-            <input name="uname" id="uname" type="text" placeholder="Username">
+            <input id="uname" type="text" placeholder="Username" required>
 
             <label for = "email"></label>
-            <input name="email" id = "email" type = "text" placeholder = "Email"required>
+            <input id = "email" type = "text" placeholder = "Email" required>
 
             <label for = "password"></label>
-            <input name="password" id="password" type="password" placeholder="Password" required>
+            <input id="password" type="password" placeholder="Password" required>
 
-            <label for = "confrimpassword"></label>
-            <input name="confrimpassword" id="confirmpassword" type="password" placeholder="Confrim Password" required>
+            <label for = "confirmpassword"></label>
+            <input id="confirmpassword" type="password" placeholder="Confirm Password" required>
             
             <input type="submit" name="" value="Sign up">
 
